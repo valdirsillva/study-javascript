@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    font-size: 1.24rem;
+    font-weight: 400;
+    color: #0c0c0c;
+}
+
+.container {
+    position: relative;
+
+    display: block;
+    width: 575px;
+    border: 1px solid tomato;
+    padding: 1rem;
+}
