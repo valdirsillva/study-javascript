@@ -43,7 +43,7 @@ async function getCountries() {
         }
     })
 
-    render()
+    loader()
 }
 
 function render() {
@@ -52,6 +52,16 @@ function render() {
     renderSummary();
     handleCountryButtons();
 
+}
+
+function loader() {
+    var loaderCss = document.querySelector('.content-loader')
+
+    setTimeout(() => {
+        loaderCss.classList.remove('active')
+
+        render()
+    }, 3000)
 }
 
 function renderCountryList() {
