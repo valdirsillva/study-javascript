@@ -1,19 +1,25 @@
 body {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #fff;
     background: #131415;
 
-    font-family: 'Asap Condensed', sans-serif;
+    font-family: 'Asap Condensed' sans-serif;
+    font-size: 1.3rem;
     line-height: 10px;
     letter-spacing: 1px;
 }
 
 h5 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #0fe3ce;
+}
+
+h6 {
+    font-size: 1.2rem;
 }
 
 .container-country {
@@ -23,10 +29,13 @@ h5 {
     margin-top: 2rem;
 }
 
+.favorite-content {
+    width: 292px;
+}
 
 .btn-plus img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -40,8 +49,8 @@ h5 {
 }
 
 .country {
-    width: 275px;
-    height: 100px;
+    width: 350px;
+    height: 130px;
     border: 1px solid #313234;
     border-radius: 10px;
     padding: 0 .5rem;
