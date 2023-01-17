@@ -44,6 +44,8 @@ async function getCountries() {
     })
 
     loader()
+
+
 }
 
 function render() {
@@ -149,6 +151,8 @@ function addToFavorite(id) {
 
     favoriteCountries = [...favoriteCountries, countryToAdd]
 
+    toastr.success('País adicionado aos favoritos.')
+
     favoriteCountries.sort((a, b) => {
         return a.name.localeCompare(b.name)
     })
@@ -162,6 +166,9 @@ function removeFromFavorite(id) {
     const countryToRemove = favoriteCountries.find(country => country.id === id);
 
     allCountries = [...allCountries, countryToRemove]
+
+    toastr.error('País removido dos favoritos.')
+
 
     allCountries.sort((a, b) => {
         return a.name.localeCompare(b.name)
