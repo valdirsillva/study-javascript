@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP PARA LISTAR E FAVORITAR PAÍSES</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container-country">
+        <section class="country-content">
+            <h5>Países [<span id="count-countries"></span>] </h5>
+            <h6>População total: <span id="total-population-list"></span></h6>
+
+            <div id="tabCountries"></div>
+        </section>
+
+        <section class="favorite-content">
+            <h5>Países [<span id="count-favorites"></span>] </h5>
+            <h6>População total: <span id="total-population-favorites"></span></h6>
+
+            <div id="tabFavorites"></div>
+        </section>
+    </div>
+
+
+    <script src="js/country.js"></script>
+</body>
+
+</html>
